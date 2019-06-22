@@ -1,0 +1,13 @@
+[build-system]
+requires = ["flit"]
+build-backend = "flit.buildapi"
+
+[tool.flit.metadata]
+module = "stamp_de_tafels"
+author = "Sander Teunissen"
+author-email = "no_mail@nomail.com"
+classifiers = ["License :: OSI Approved :: MIT License"]
+requires = ["prompt-toolkit>=2.0.9","questionary","colorama"]
+
+[tool.flit.scripts]
+stamp = "stamp_de_tafels.start:main"
